@@ -5,7 +5,7 @@ to connect to Force.com using OAuth2, then performs a simple REST
 call using Httparty to retrieve a list of Accounts.
 
 How to use it:
-Navigate to https://localhost:3000/auth/forcedotcom
+see https://github.com/quintonwall/omniauth-rails3-forcedotcom/wiki
 
 
 files  of note:
