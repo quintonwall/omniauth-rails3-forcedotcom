@@ -1,5 +1,6 @@
 Rails 3 with Omniauth, REST and HTTParty example for Force.com
-
+ 
+ 
 This sample rails3 app uses a custom Force.com strategy for Omniauth
 to connect to Force.com using OAuth2, then performs a simple REST
 call using Httparty to retrieve a list of Accounts.
