@@ -1,0 +1,23 @@
+Rails 3 with Omniauth, REST and HTTParty example for Force.com
+
+This sample rails3 app uses a custom Force.com strategy for Omniauth
+to connect to Force.com using OAuth2, then performs a simple REST
+call using Httparty to retrieve a list of Accounts.
+
+How to use it:
+Navigate to https://localhost:3000/auth/forcedotcom
+
+
+files  of note:
+
+lib/forcedotcom.rb - the custom Omniauth strategy
+config/initializers/omniauth.rb - add your consumer key and consumer secret here
+lib/accounts.rb - the Httparty class which performs a rest call
+app/controllers/session_controller.rb - the create method handles the oauth callback
+config/routes.rb - includes callback routing
+config/environment.rb - includes env variable to set REST API version number
+rails/server - I have updated this to support HTTPS. You will need to generate your own
+keys and drop them in the lib/certs dir. Check out the README in that dir for more info
+
+
+
